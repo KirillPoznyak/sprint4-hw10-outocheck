@@ -56,7 +56,7 @@ const view = {
     moviesList.addEventListener('click', (event) => {
       if (event.target && event.target.className === 'delete-button') {
         const movieId = Number(event.target.closest('.movie').id);
-        model.deleteMovie(movieId);
+        controller.deleteMovie(movieId);
       }
     })
   },
